@@ -164,3 +164,11 @@
   164  touch README.md 
   165  git push origin master
   166  history >history.txt
+  167  git push origin master
+  168  git status
+  169  git add history.txt
+  170  git push origin master
+  171  git status
+  172  git commit
+  173  git push origin master
+  174  history >history.txt
