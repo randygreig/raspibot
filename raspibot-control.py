@@ -17,11 +17,15 @@ print "        raspibot Joystick control"
 print "================================================"
 
 # Import dependent Python modules
+import socket
 try:
 	import pygame.joystick
 except:
 	print "\nPlease install the 'pygame' module <http://www.pygame.org/>.\n"
 	quit()
+
+robotsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+robotsock.connect(("192.168.1.52", 9000))
 
 # Allow for multiple joysticks
 joy = []
@@ -82,14 +86,15 @@ def handleJoyEvent(e):
         # Button 1 (trigger)
         if (e.dict['button'] == 0):
             print "Trigger Down"
-            # Set pin 13 LED to HIGH for digital on/off demo
-            #servo.move(99, 180)
+            robotsock.send('R')
         # Button 2
         if (e.dict['button'] == 1):
             print "Button 2 Down"
+            robotsock.send('G')
         # Button 3
         if (e.dict['button'] == 2):
             print "Button 3 Down"
+            robotsock.send('B')
         # Button 4
         if (e.dict['button'] == 3):
             print "Button 4 Down"
@@ -99,6 +104,7 @@ def handleJoyEvent(e):
         # Button 6
         if (e.dict['button'] == 5):
             print "Button 6 Down"
+            robotsock.send('Q')
             quit()
 
     # Assign actions for Button UP events
