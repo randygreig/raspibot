@@ -157,18 +157,95 @@
   157  clear
   158  date;python temptest.py 
   159  sudo shutdown -h now
-  160  history
+  160  ls
   161  cd raspibot/
   162  ls
-  163  git push origin master
-  164  touch README.md 
-  165  git push origin master
-  166  history >history.txt
-  167  git push origin master
-  168  git status
-  169  git add history.txt
-  170  git push origin master
+  163  sudo python blink.py 
+  164  date;python temptest.py 
+  165  clear
+  166  date;python temptest.py 
+  167  sudo vi /etc/ntp.conf
+  168  sudo pylint temptest.py 
+  169  sudo pep8 temptest.py 
+  170  date;python temptest.py 
   171  git status
-  172  git commit
-  173  git push origin master
-  174  history >history.txt
+  172  ls -ltr
+  173  cat history.txt 
+  174  ls
+  175  git fetch
+  176  ls -l
+  177  git fetch
+  178  ls -l
+  179  git fetch --all
+  180  ls
+  181  ls -al
+  182  git /?
+  183  git --help
+  184  git fetch --help
+  185  git merge
+  186  got checkout
+  187  git checkout
+  188  git status
+  189  ls
+  190  git merge --help
+  191  git pull
+  192  git pull --help
+  193  ls -ltr
+  194  ls -ltra
+  195  ls .git
+  196  ls -ltr .git
+  197  ls -ltr .git/FETCH_HEAD 
+  198  cat .git/FETCH_HEAD 
+  199  cat .git/index 
+  200  ls -ltr .git/FETCH_HEAD 
+  201  ls -ltr .git/
+  202  ls -ltr .git/objects/
+  203  ls -ltr .git/objects/65
+  204  ls -ltr .git/objects/a0
+  205  ls -ltr .git/objects/cb
+  206  cat .git/objects/65
+  207  ls -ltr .git/objects/65
+  208  cat .git/objects/65/eee98e5dfccd1ed90c2162c7ebc204c3a575f7 
+  209  PuTTYPuTTYPuTTYPuTTYPuTTYPuTTY
+  210  clear
+  211  git remote -v
+  212  git fetch origin
+  213  ls -l
+  214  git merge origin
+  215  git merge
+  216  git merge --help
+  217  git merge recursive theirs
+  218  git merge --help
+  219  git merge -Xrecursive theirs
+  220  git merge -Xrecursive
+  221  ls a-l
+  222  ls -al
+  223  ls .git
+  224  more .git/config
+  225  git config --help
+  226  git config merge.todefaultupstream
+  227  more .git/config
+  228  git config --help
+  229  git config merge.defaultToUpstream
+  230  more .git/config
+  231  git config merge.defaultToUpstream True
+  232  more .git/config
+  233  git merge
+  234  git clone
+  235  git --help
+  236  git list
+  237  git branch
+  238  git diff
+  239  git am
+  240  more .git/config
+  241  git pull
+  242  git pull remote
+  243  git pull remote origin
+  244  git branch --set-upstream master origin
+  245  git branch --set-upstream master origin/
+  246  git branch --set-upstream master origin/*
+  247  git branch --set-upstream master origin/master
+  248  git pull remote
+  249  git pull
+  250  ls -ltr
+  251  history >history.txt 
