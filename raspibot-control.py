@@ -25,7 +25,7 @@ except:
 	quit()
 
 robotsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-robotsock.connect(("192.168.1.52", 9000))
+robotsock.connect(("192.168.1.50", 9000))
 
 # Allow for multiple joysticks
 joy = []
