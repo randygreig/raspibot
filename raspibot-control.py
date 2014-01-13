@@ -86,21 +86,23 @@ def handleJoyEvent(e):
         # Button 1 (trigger)
         if (e.dict['button'] == 0):
             print "Trigger Down"
-            robotsock.send('R')
+            robotsock.send('M')
         # Button 2
         if (e.dict['button'] == 1):
             print "Button 2 Down"
-            robotsock.send('G')
+	    robotsock.send('F')
         # Button 3
         if (e.dict['button'] == 2):
             print "Button 3 Down"
-            robotsock.send('B')
+	    robotsock.send('B')
         # Button 4
         if (e.dict['button'] == 3):
             print "Button 4 Down"
-        # Button 5
+            robotsock.send('L')
+	# Button 5
         if (e.dict['button'] == 4):
             print "Button 5 Down"
+	    robotsock.send('R')
         # Button 6
         if (e.dict['button'] == 5):
             print "Button 6 Down"
